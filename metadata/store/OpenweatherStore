@@ -1,0 +1,44 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoDestroy": true,
+        "autoLoad": false,
+        "designer|userClassName": "OpenweatherStore",
+        "model": "WeatherModel",
+        "storeId": "OpenweatherStore"
+    },
+    "name": "MyJsonPStore",
+    "designerId": "af4bbf5d-ad81-488f-ad30-893cc73de8d5",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://api.openweathermap.org/data/2.5/weather?appid=2be8bbab865e318bc88171f1b08a6ade&units=metric"
+            },
+            "name": "MyJsonPProxy",
+            "designerId": "4b82fbfe-0292-4362-a2db-fbf0dd4f0739",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader",
+                    "designerId": "462a56fc-cc1e-45cc-9862-bcb8fb8b9737"
+                }
+            ]
+        }
+    ]
+}

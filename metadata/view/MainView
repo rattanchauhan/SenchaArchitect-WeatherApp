@@ -1,0 +1,589 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mainview",
+        "designer|userClassName": "MainView"
+    },
+    "name": "MyViewport",
+    "designerId": "b9458c1c-e6d6-489a-8a91-4a0bb8a65f24",
+    "viewControllerInstanceId": "8bc3f754-fa1c-4a0f-9459-26dd1f6f6116",
+    "viewModelInstanceId": "d5039c1e-ca76-4faf-bb0c-682055628ba8",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "HeaderTop",
+                "layout": "fit",
+                "title": "Weather Forecast"
+            },
+            "name": "MyPanel",
+            "designerId": "83b97adc-2418-445b-b3a0-583bf62749d5",
+            "cn": [
+                {
+                    "type": "Ext.tab.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "activeTab": 0,
+                        "designer|displayName": "MainTabPanel"
+                    },
+                    "name": "MyTabPanel",
+                    "designerId": "ae2353d6-ddf6-4413-84fc-04446b90d53d",
+                    "cn": [
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "CurrentWeather",
+                                "designer|uiInterfaceName": "default",
+                                "icon": null,
+                                "title": "Current Weather"
+                            },
+                            "name": "MyPanel1",
+                            "designerId": "62742248-5374-4252-ba17-a3af78816ee7",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "TabConfig",
+                                    "designerId": "e350eceb-c75b-4da8-a10c-31bd1d657146"
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "CurrentWeatherAccordionPanel",
+                                        "layout": "accordion",
+                                        "title": ""
+                                    },
+                                    "name": "MyPanel4",
+                                    "designerId": "b61768bd-44e1-4e11-87f7-be79ad2acd44",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.panel.Panel",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": null,
+                                                "title": "Weather By City"
+                                            },
+                                            "name": "MyPanel5",
+                                            "designerId": "ba5b833e-e3e3-4fcf-83ef-f1b994c0abf8",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.form.Panel",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "bodyPadding": null,
+                                                        "container|align": "stretch",
+                                                        "container|padding": null,
+                                                        "designer|displayName": "CityForm",
+                                                        "height": null,
+                                                        "layout": "vbox",
+                                                        "padding": 50,
+                                                        "title": ""
+                                                    },
+                                                    "name": "MyForm",
+                                                    "designerId": "e77b5b59-5b00-4d3b-80e9-55978674286d",
+                                                    "viewControllerInstanceId": "36c02328-508f-4dc1-9b89-6127a33e1192",
+                                                    "viewModelInstanceId": "5a6f2976-4ce8-4105-a650-9c1ac5707ded",
+                                                    "cn": [
+                                                        {
+                                                            "type": "Ext.form.field.Text",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "allowBlank": false,
+                                                                "allowOnlyWhitespace": false,
+                                                                "blankText": "City Name is required!",
+                                                                "designer|displayName": "CItyFormField",
+                                                                "designer|uiInterfaceName": "default",
+                                                                "dock": null,
+                                                                "emptyText": "Enter City Name...",
+                                                                "fieldLabel": "",
+                                                                "formBind": false,
+                                                                "minLength": null,
+                                                                "reference": "cityNameText",
+                                                                "validateOnChange": false
+                                                            },
+                                                            "name": "MyTextField",
+                                                            "designerId": "afd3defa-b2eb-49c7-bfdd-edaed4729649"
+                                                        },
+                                                        {
+                                                            "type": "Ext.button.Button",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|displayName": "GetWeatherByCityButton",
+                                                                "formBind": true,
+                                                                "text": "Get Forecast",
+                                                                "width": 150
+                                                            },
+                                                            "name": "MyButton",
+                                                            "designerId": "4ed58f0d-85fd-4e21-b31a-51fff3e690e2",
+                                                            "cn": [
+                                                                {
+                                                                    "type": "viewcontrollereventbinding",
+                                                                    "reference": {
+                                                                        "name": "listeners",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "fn": "onGetWeatherByCityNameClick",
+                                                                        "implHandler": [
+                                                                            "",
+                                                                            "var cityField = this.getView().lookup('cityNameText');",
+                                                                            "var cityName = cityField.getValue();",
+                                                                            "",
+                                                                            "if(cityName ==='') {",
+                                                                            "    console.log('city name can not be empty');",
+                                                                            "",
+                                                                            "} else {",
+                                                                            "// show forecast overview panel",
+                                                                            "var panel = this.getView().lookup('forecastresultpanel');",
+                                                                            "panel.expand();",
+                                                                            "",
+                                                                            "// setup result grid",
+                                                                            "var resultGrid = panel.down('#results');",
+                                                                            "resultGrid.setTitle('Current weather in '+ cityName);",
+                                                                            "",
+                                                                            "var store = resultGrid.getStore();",
+                                                                            "store.removeAll();",
+                                                                            "resultGrid.setHidden(false);",
+                                                                            "resultGrid.setLoading(true);",
+                                                                            "",
+                                                                            "",
+                                                                            "store.load({",
+                                                                            "    params: {",
+                                                                            "        q: cityName",
+                                                                            "    },",
+                                                                            "    callback: function (records, options, success) {",
+                                                                            "        console.log('loading data from openweather completed...');",
+                                                                            "        if (success) {",
+                                                                            "            var ct = records.length, it = 0;",
+                                                                            "            while (it < ct) {",
+                                                                            "               console.log(records[it]);",
+                                                                            "                it++;",
+                                                                            "            }",
+                                                                            "            resultGrid.setLoading(false);",
+                                                                            "        }",
+                                                                            "    }",
+                                                                            "});",
+                                                                            "",
+                                                                            "}"
+                                                                        ],
+                                                                        "name": "click",
+                                                                        "scope": "me"
+                                                                    },
+                                                                    "name": "onGetWeatherByCityNameClick",
+                                                                    "designerId": "df2c4335-7f70-4faa-bac6-7e03b2852e30"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.panel.Panel",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "title": "Weather By Zip"
+                                            },
+                                            "name": "MyPanel6",
+                                            "designerId": "8ca4769b-d722-4a44-95ef-344dccc758b6",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.form.Panel",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "bodyPadding": null,
+                                                        "container|align": "stretch",
+                                                        "container|padding": null,
+                                                        "designer|displayName": "ZipForm",
+                                                        "height": null,
+                                                        "layout": "vbox",
+                                                        "padding": 50,
+                                                        "title": ""
+                                                    },
+                                                    "name": "MyForm",
+                                                    "designerId": "75765684-779f-4c15-91ea-959738e9d932",
+                                                    "viewControllerInstanceId": "36c02328-508f-4dc1-9b89-6127a33e1192",
+                                                    "viewModelInstanceId": "5a6f2976-4ce8-4105-a650-9c1ac5707ded",
+                                                    "cn": [
+                                                        {
+                                                            "type": "Ext.form.field.Text",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|displayName": "ZipFormField",
+                                                                "dock": null,
+                                                                "emptyText": "Enter zip code...",
+                                                                "fieldLabel": "",
+                                                                "formBind": true,
+                                                                "selectOnFocus": true,
+                                                                "validateBlank": true
+                                                            },
+                                                            "name": "MyTextField",
+                                                            "designerId": "95ae98b3-dfa6-43f1-b344-60c850fe77ae"
+                                                        },
+                                                        {
+                                                            "type": "Ext.button.Button",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|displayName": "GetForecastByZipButton",
+                                                                "text": "Get Forecast",
+                                                                "width": 150
+                                                            },
+                                                            "name": "MyButton",
+                                                            "designerId": "5dc9c522-8be1-417c-960a-946a83710450"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.panel.Panel",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "title": "Weather By Co-ordinates"
+                                            },
+                                            "name": "MyPanel7",
+                                            "designerId": "a3f9c9fb-77ea-4af6-a09a-a571c0673b5a",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.form.Panel",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "bodyPadding": null,
+                                                        "container|align": "stretch",
+                                                        "container|padding": null,
+                                                        "designer|displayName": "CoordinatesForm",
+                                                        "height": null,
+                                                        "layout": "vbox",
+                                                        "padding": 50,
+                                                        "title": ""
+                                                    },
+                                                    "name": "MyForm",
+                                                    "designerId": "31b3ff04-18c1-4f77-b533-6c6e137c9272",
+                                                    "viewControllerInstanceId": "36c02328-508f-4dc1-9b89-6127a33e1192",
+                                                    "viewModelInstanceId": "5a6f2976-4ce8-4105-a650-9c1ac5707ded",
+                                                    "cn": [
+                                                        {
+                                                            "type": "Ext.form.field.Text",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|displayName": "CoordinatesFormField",
+                                                                "dock": null,
+                                                                "emptyText": "Enter geographical coordinates...",
+                                                                "fieldLabel": "",
+                                                                "formBind": true,
+                                                                "selectOnFocus": true,
+                                                                "validateBlank": true
+                                                            },
+                                                            "name": "MyTextField",
+                                                            "designerId": "8aec3f1b-7eca-44c0-b5c3-482831e74165"
+                                                        },
+                                                        {
+                                                            "type": "Ext.button.Button",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|displayName": "GetForecastByCoordinatesButton",
+                                                                "text": "Get Forecast",
+                                                                "width": 150
+                                                            },
+                                                            "name": "MyButton",
+                                                            "designerId": "4d908d62-47d9-4186-821e-90488ceae03e"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.panel.Panel",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "CurrentWeatherResult Panel",
+                                                "itemId": "forecastResultPanel",
+                                                "reference": "forecastresultpanel",
+                                                "title": "Search Results"
+                                            },
+                                            "name": "MyPanel8",
+                                            "designerId": "16c8bd99-9b7d-4790-9f88-40d7193da3f1",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.grid.Panel",
+                                                    "reference": {
+                                                        "name": "dockedItems",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|displayName": "CurrentWeatherResultGrid",
+                                                        "dock": "top",
+                                                        "hidden": true,
+                                                        "itemId": "results",
+                                                        "minHeight": null,
+                                                        "store": "OpenweatherStore",
+                                                        "title": null
+                                                    },
+                                                    "name": "MyGridPanel",
+                                                    "designerId": "3359d4a9-7912-46d6-8cd9-9831f8e29e0b",
+                                                    "cn": [
+                                                        {
+                                                            "type": "Ext.grid.column.Column",
+                                                            "reference": {
+                                                                "name": "columns",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "dataIndex": "longitude",
+                                                                "designer|displayName": "Longitude",
+                                                                "text": "Longitude"
+                                                            },
+                                                            "name": "MyColumn1",
+                                                            "designerId": "509bf9d6-f253-44a1-9bf5-7ceae9a65764"
+                                                        },
+                                                        {
+                                                            "type": "Ext.grid.column.Column",
+                                                            "reference": {
+                                                                "name": "columns",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "dataIndex": "latitude",
+                                                                "designer|displayName": "Latitude",
+                                                                "text": "Latitude"
+                                                            },
+                                                            "name": "MyColumn",
+                                                            "designerId": "d0a48a39-ab74-4023-883f-3e3a97b98b50"
+                                                        },
+                                                        {
+                                                            "type": "Ext.view.Table",
+                                                            "reference": {
+                                                                "name": "viewConfig",
+                                                                "type": "object"
+                                                            },
+                                                            "codeClass": null,
+                                                            "name": "MyTable",
+                                                            "designerId": "e7032235-a8e2-43ae-a396-f9125690ab15"
+                                                        },
+                                                        {
+                                                            "type": "Ext.grid.column.Column",
+                                                            "reference": {
+                                                                "name": "columns",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "dataIndex": "temperature",
+                                                                "designer|displayName": "Temperature",
+                                                                "text": "Temperature",
+                                                                "width": 150
+                                                            },
+                                                            "name": "MyColumn2",
+                                                            "designerId": "d4fdee08-c2c2-46c7-a0a4-09d46e5c09a9"
+                                                        },
+                                                        {
+                                                            "type": "Ext.grid.column.Column",
+                                                            "reference": {
+                                                                "name": "columns",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "dataIndex": "pressure",
+                                                                "designer|displayName": "Pressure",
+                                                                "text": "Pressure"
+                                                            },
+                                                            "name": "MyColumn3",
+                                                            "designerId": "ba493d31-7e0d-49f2-bfa2-3842e997ee0c"
+                                                        },
+                                                        {
+                                                            "type": "Ext.grid.column.Column",
+                                                            "reference": {
+                                                                "name": "columns",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "dataIndex": "humidity",
+                                                                "designer|displayName": "Humidity",
+                                                                "text": "Humidity"
+                                                            },
+                                                            "name": "MyColumn4",
+                                                            "designerId": "0d2137c4-9335-4368-b701-386fd507de56"
+                                                        },
+                                                        {
+                                                            "type": "Ext.grid.column.Column",
+                                                            "reference": {
+                                                                "name": "columns",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "dataIndex": "cloudcover",
+                                                                "designer|displayName": "CloudCover",
+                                                                "text": "Cloud Cover",
+                                                                "width": 150
+                                                            },
+                                                            "name": "MyColumn5",
+                                                            "designerId": "ddf13efb-4521-45e6-bb19-ba8765448fff"
+                                                        },
+                                                        {
+                                                            "type": "Ext.grid.column.Column",
+                                                            "reference": {
+                                                                "name": "columns",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "dataIndex": "windspeed",
+                                                                "designer|displayName": "WindSpeed",
+                                                                "text": "Wind Speed",
+                                                                "width": 120
+                                                            },
+                                                            "name": "MyColumn6",
+                                                            "designerId": "23b68f3c-8355-4ca8-a39d-1a62f992e4a9"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "Forecast",
+                                "title": "Forecast"
+                            },
+                            "name": "MyPanel2",
+                            "designerId": "3b8dbf71-4214-4eae-97b7-64e68b902b3e",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "TabConfig1",
+                                    "designerId": "62b78915-2558-4e87-8eee-697f52669c79"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "title": "About Us"
+                            },
+                            "name": "MyPanel3",
+                            "designerId": "07b6c87a-92c3-4b00-8cc1-7cbc2f9fa06c",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "TabConfig2",
+                                    "designerId": "e8a6b713-355b-4637-9b02-48f905faaab1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

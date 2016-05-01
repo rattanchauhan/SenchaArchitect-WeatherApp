@@ -1,0 +1,44 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "WeatherModel"
+        ],
+        "name": "WeatherApp",
+        "stores": [
+            "OpenweatherStore"
+        ],
+        "views": [
+            "MainView",
+            "LoginWindow"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "// This ternary operator determines the value of the TutorialLoggedIn key.",
+                    " var login = Ext.getCmp('WeatherApp.view.LoginWindow');",
+                    "",
+                    "Ext.create(login ? 'WeatherApp.view.MainView': 'WeatherApp.view.LoginWindow');"
+                ]
+            },
+            "name": "launch",
+            "designerId": "d8a21a48-4755-43cd-92c1-6d43a414a60f"
+        }
+    ]
+}

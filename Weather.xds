@@ -1,0 +1,61 @@
+{
+    "name": "Weather",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "6.1.1.76",
+            "frameworkVersion": "6.0.1.250"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "http://localhost:1841",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "projectHasEnabledWebServer": true,
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        }
+    },
+    "xdsVersion": "3.5.0",
+    "xdsBuild": 279,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext60",
+    "viewOrderMap": {
+        "view": [
+            "b9458c1c-e6d6-489a-8a91-4a0bb8a65f24",
+            "d5039c1e-ca76-4faf-bb0c-682055628ba8",
+            "8bc3f754-fa1c-4a0f-9459-26dd1f6f6116",
+            "7c8de7ef-14d5-4fec-9f6d-37eb1ecb0bce",
+            "483584e3-ac93-4236-98e2-55d34e09cf9e",
+            "eaff4cac-d31e-4674-b2e4-f848ebfaa711"
+        ],
+        "store": [
+            "af4bbf5d-ad81-488f-ad30-893cc73de8d5"
+        ],
+        "controller": [],
+        "model": [
+            "02f59574-aedf-44ae-9f35-4371d56324d0"
+        ],
+        "resource": [
+            "41c8bf76-51e7-49e5-bb93-ba572bb24fc6",
+            "aac8de92-8e5b-428d-9daf-bfd548b69916"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

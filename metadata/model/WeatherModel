@@ -1,0 +1,132 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "WeatherModel"
+    },
+    "name": "MyModel",
+    "designerId": "02f59574-aedf-44ae-9f35-4371d56324d0",
+    "cn": [
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": [
+                    "coord.lon"
+                ],
+                "name": "longitude"
+            },
+            "name": "MyString",
+            "designerId": "5c93fab4-a50a-4477-bae8-75489d52bbf0"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": [
+                    "coord.lat"
+                ],
+                "name": "latitude"
+            },
+            "name": "MyString1",
+            "designerId": "a170c5a6-e448-4830-8a5d-ea8bce3263a8"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "temperature",
+                "mapping": [
+                    "main.temp"
+                ],
+                "name": "temperature"
+            },
+            "name": "MyString2",
+            "designerId": "40345307-0dfb-4aac-a938-53ea0f57d974"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "pressure",
+                "mapping": [
+                    "main.pressure"
+                ],
+                "name": "pressure"
+            },
+            "name": "MyString3",
+            "designerId": "0269dfb7-3548-4e88-9921-f57423c13bea"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "humidity",
+                "mapping": [
+                    "main.humidity"
+                ],
+                "name": "humidity"
+            },
+            "name": "MyString4",
+            "designerId": "8ebbdb7f-52a3-4d4d-969a-6e43a52b7fd6"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "cloud cover",
+                "mapping": [
+                    "clouds.all"
+                ],
+                "name": "cloudcover"
+            },
+            "name": "MyString5",
+            "designerId": "747a4cd8-10d5-4a1c-9f96-e9080bcd4b38"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "windspeed",
+                "mapping": [
+                    "wind.speed"
+                ],
+                "name": "windspeed"
+            },
+            "name": "MyString6",
+            "designerId": "16f0feeb-635f-4961-b7f7-9985fd16b361"
+        }
+    ]
+}

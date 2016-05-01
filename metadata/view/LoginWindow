@@ -1,0 +1,119 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "closable": false,
+        "designer|userAlias": "loginwindow",
+        "designer|userClassName": "LoginWindow",
+        "height": 250,
+        "title": "Login",
+        "titleAlign": "center",
+        "width": 400
+    },
+    "name": "MyWindow",
+    "designerId": "7c8de7ef-14d5-4fec-9f6d-37eb1ecb0bce",
+    "viewControllerInstanceId": "eaff4cac-d31e-4674-b2e4-f848ebfaa711",
+    "viewModelInstanceId": "483584e3-ac93-4236-98e2-55d34e09cf9e",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "designer|displayName": "LoginForm",
+                "reference": "loginform",
+                "title": null
+            },
+            "name": "MyForm1",
+            "designerId": "e35fec3b-8c9c-4b85-b5ae-7f86b016700d",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "allowOnlyWhitespace": false,
+                        "blankText": "Please enter your username.",
+                        "designer|displayName": "username",
+                        "fieldLabel": "Username",
+                        "layout|anchor": "100%"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "f969a812-f4dd-4c3c-88bc-5a95b5c59345"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "allowOnlyWhitespace": false,
+                        "blankText": "Please enter your password.",
+                        "designer|displayName": "password",
+                        "fieldLabel": "Password",
+                        "inputType": "password",
+                        "layout|anchor": "100%"
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "397a481d-a70f-435f-889b-66b3d1d3b6b2"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "formBind": true,
+                        "text": "Login"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "d15a3c68-827d-4cf9-b062-e10b1cb4a74e",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onLoginClick",
+                                "implHandler": [
+                                    "// do server side authentication ",
+                                    "",
+                                    "// Remove Login Window",
+                                    " this.getView().setVisible(false);",
+                                    "",
+                                    "// Add the main view to the viewport",
+                                    "Ext.create('WeatherApp.view.MainView');"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onLoginClick",
+                            "designerId": "a00c8363-77a8-4209-9b86-908fedbb070b"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
