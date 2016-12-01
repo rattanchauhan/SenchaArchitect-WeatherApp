@@ -33,7 +33,6 @@ Ext.application({
     name: 'WeatherApp',
 
     launch: function() {
-        // This ternary operator determines the value of the TutorialLoggedIn key.
          var login = Ext.getCmp('WeatherApp.view.LoginWindow');
 
         Ext.create(login ? 'WeatherApp.view.MainView': 'WeatherApp.view.LoginWindow');
